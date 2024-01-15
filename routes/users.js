@@ -7,4 +7,9 @@ router.route("/").get((req, res) => {
     res.json(users);
 });
 
+router.post("/create", (req,res)=>{
+    res.send("Creating a new user...")
+});
+
+
 module.exports = router;

@@ -51,7 +51,7 @@ const products = [
       id: 9,
       section: "cheese",
       kind:"feta",
-      brand: "Sunshine valey",
+      brand: "Sunshine valey road",
     },
   ];
   module.exports = products;

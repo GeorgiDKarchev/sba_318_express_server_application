@@ -1,0 +1,12 @@
+body{
+    background-color: aquamarine;
+    height:500px;
+    width: 600px;
+}
+div{
+    margin-top: 10px;
+}
+button{
+    margin-top: 10px;
+margin-left: 10px;
+}

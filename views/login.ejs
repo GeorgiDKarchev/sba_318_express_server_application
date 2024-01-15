@@ -1,14 +1,24 @@
-<h1> Login</h1>
-<form action="/login" method="POST">
-<div>
-    <lable for="email">Email </lable>
-    <input type="email" id="email" name="email"
-    required>
-</div>
-<div>
-    <lable for="password">Password </lable>
-    <input type="password" id="password" name="password"
-    required>
-</div>
-<button type="submit">Login</button>
-</form>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Users</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="/style.css"/>
+    </head>
+<body>
+    <h1> Login</h1>
+    <form action="/login" method="POST">
+    <div>
+        <lable for="email">Email </lable>
+        <input type="email" id="email" name="email"
+        required>
+    </div>
+    <div>
+        <lable for="password">Password </lable>
+        <input type="password" id="password" name="password"
+        required>
+    </div>
+    <button onclick="window.location.href = 'http://google.com'" type="submit">Login</button>
+    </form>
+</body>
+</html>
