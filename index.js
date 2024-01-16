@@ -51,9 +51,9 @@ app.route('/users')
     });
 
 
-app.get ('/',(req, res)=>{
-    res.render('index.ejs')
-});
+//app.get ('/',(req, res)=>{
+//    res.render('index.ejs')
+//});
 
 // GET /users
 app.get('/users', (req, res)=>{
@@ -64,13 +64,42 @@ app.get('/orders', (req, res)=>{
     res.json(ordersData);
 });
 //Routes
-app.get('/login', (req,res)=>{
-    res.render('login.ejs')
-});
+//app.get('/login', (req,res)=>{
+//    res.render('login.ejs')
+//});
 app.use('/users', users);
 app.use('/products', products)
 app.use('/orders', orders)
 
+//Adding HATEOS links 
+app.get('/', (req, res) => {
+    res.json({
+        links: [
+            {
+                href: '/users',
+                rel: 'users',
+                type:'GET',
+            },
+            {
+                href: '/users',
+                rel: 'users',
+                type:'POST',
+            },
+            {
+                href: '/orders',
+                rel: 'orders',
+                type:'GET',
+            },
+            {
+                href: '/products',
+                rel: 'products',
+                type:'GET',
+            },
+
+        ],
+
+    });
+});
 
 //viewing individul user
 app.route('/users/:id')
