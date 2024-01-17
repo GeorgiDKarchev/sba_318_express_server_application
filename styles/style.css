@@ -1,7 +1,9 @@
 body{
     background-color: aquamarine;
-    height:500px;
-    width: 600px;
+    height:1000px;
+    width: 900px;
+    text-align: center;
+    
 }
 div{
     margin-top: 10px;
@@ -9,4 +11,12 @@ div{
 button{
     margin-top: 10px;
 margin-left: 10px;
+}
+.formID {
+    display:block;
+    text-align: center;
+}
+form{
+    display:inline-block;
+    margin-left:300px;
 }
